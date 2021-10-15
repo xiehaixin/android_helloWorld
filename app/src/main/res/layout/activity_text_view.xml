@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextViewActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text="@string/xhx_text"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- 溢出隐藏显示三个点 -->
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text="@string/xhx_text"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text="界面直接赋值，删除线"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text="筛选"
+        android:drawableRight="@drawable/hl_sdk_anchor_down2x"
+        android:drawablePadding="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text="界面直接赋值，下划线"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text=""
+        android:layout_marginBottom="5dp"
+        />
+
+    <!--
+    android:focusable="true"不用获得焦点也能跑
+    android:ellipsize="marquee" 走马灯类型  android:singleLine="true"这个不等于true会报错
+    android:marqueeRepeatLimit="marquee_forever" 一直循环跑
+    -->
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="界面直接赋值，走马灯一直走,走马灯一直走,走马灯一直走,走马灯一直走"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+</LinearLayout>

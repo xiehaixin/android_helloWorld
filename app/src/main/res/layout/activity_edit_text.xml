@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/ed_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#FF9900"
+        android:hint="用户名"
+        android:background="@drawable/edit_text_activity_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/hl_sdk_phone"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ed_1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_activity_bg"
+        android:drawableLeft="@drawable/hl_sdk_lock"
+        android:drawablePadding="5dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF9900"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ed_2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_activity_bg"
+        android:drawableLeft="@drawable/hl_sdk_phone"
+        android:drawablePadding="5dp"
+        android:hint="手机号"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FF9900"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ed_3"
+        android:background="@drawable/button_activity_btn4"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        />
+</RelativeLayout>
