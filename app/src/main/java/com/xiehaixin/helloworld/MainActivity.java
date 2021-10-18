@@ -11,11 +11,12 @@ import com.xiehaixin.helloworld.activitys.ButtonActivity;
 import com.xiehaixin.helloworld.activitys.CheckBoxActivity;
 import com.xiehaixin.helloworld.activitys.EditTextActivity;
 import com.xiehaixin.helloworld.activitys.ImageViewActivity;
+import com.xiehaixin.helloworld.activitys.ListViewActivity;
 import com.xiehaixin.helloworld.activitys.RadioButtonActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1, btn2, btn3, btn4, btn5, btn6;
+    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn6 = findViewById(R.id.btn_6);
 
-        setOnClickListener(btn1, btn2, btn3, btn4, btn5, btn6);
+        btn7 = findViewById(R.id.btn_7);
+
+        setOnClickListener(btn1, btn2, btn3, btn4, btn5, btn6, btn7);
     }
 
 
@@ -73,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_6:
                     // 跳转到CImageView演示界面
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.btn_7:
+                    // 跳转到ListView演示界面
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);
