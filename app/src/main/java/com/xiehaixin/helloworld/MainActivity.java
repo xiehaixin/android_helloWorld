@@ -10,13 +10,14 @@ import android.widget.Button;
 import com.xiehaixin.helloworld.activitys.ButtonActivity;
 import com.xiehaixin.helloworld.activitys.CheckBoxActivity;
 import com.xiehaixin.helloworld.activitys.EditTextActivity;
+import com.xiehaixin.helloworld.activitys.GridViewActivity;
 import com.xiehaixin.helloworld.activitys.ImageViewActivity;
 import com.xiehaixin.helloworld.activitys.ListViewActivity;
 import com.xiehaixin.helloworld.activitys.RadioButtonActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7;
+    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn7 = findViewById(R.id.btn_7);
 
-        setOnClickListener(btn1, btn2, btn3, btn4, btn5, btn6, btn7);
+        btn8 = findViewById(R.id.btn_8);
+
+        setOnClickListener(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8);
     }
 
 
@@ -80,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_7:
                     // 跳转到ListView演示界面
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_8:
+                    // 跳转到ListView演示界面
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
             }
             startActivity(intent);
