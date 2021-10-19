@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.xiehaixin.helloworld.RecyclerViews.RecyclerViewActivity;
 import com.xiehaixin.helloworld.activitys.ButtonActivity;
 import com.xiehaixin.helloworld.activitys.CheckBoxActivity;
 import com.xiehaixin.helloworld.activitys.EditTextActivity;
@@ -17,7 +18,7 @@ import com.xiehaixin.helloworld.activitys.RadioButtonActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8;
+    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn8 = findViewById(R.id.btn_8);
 
-        setOnClickListener(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8);
+        btn9 = findViewById(R.id.btn_9);
+
+        setOnClickListener(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9);
     }
 
 
@@ -87,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_8:
                     // 跳转到ListView演示界面
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_9:
+                    // 跳转到RecyclerView演示界面
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
